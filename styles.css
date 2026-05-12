@@ -1323,3 +1323,179 @@ footer p {
 .menu-item.banquete .menu-item-inner {
   background: none !important;
 }
+
+
+/* =============================================
+   RESPONSIVE — MÓVIL
+   ============================================= */
+@media (max-width: 768px) {
+
+  /* ── NAV ── */
+  nav {
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nav-links {
+    display: none; /* Menú hamburguesa futuro */
+  }
+  .nav-cta {
+    display: block;
+  }
+
+  /* ── HERO ── */
+  .hero-content {
+    padding: 100px 1.5rem 3rem;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .hero-actions a {
+    text-align: center;
+  }
+  .hero-stats {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  /* ── ABOUT ── */
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 4rem 1.5rem;
+  }
+  .about-card-main {
+    height: 280px;
+  }
+  .about-card-accent {
+    bottom: -1rem;
+    right: -0.5rem;
+    padding: 1rem 1.2rem;
+  }
+  .about-card-accent strong {
+    font-size: 1.5rem;
+  }
+
+  /* ── SERVICIOS ── */
+  .services-section {
+    padding: 4rem 1.5rem;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .service-card-photo {
+    width: calc(100% + 4rem);
+    margin: -2.5rem -2rem 1.5rem;
+    height: 160px;
+  }
+
+  /* ── BANNER FAMILIAR ── */
+  .family-banner {
+    padding: 1.5rem;
+  }
+  .family-banner-inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .family-icon {
+    display: none;
+  }
+
+  /* ── MENÚ GRID ── */
+  .menu-section {
+    padding: 4rem 1.5rem;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .menu-item.asado {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .menu-item.asado .menu-item-inner {
+    min-height: 200px;
+  }
+  .menu-item-inner {
+    min-height: 160px;
+  }
+
+  /* ── EQUIPAMIENTO ── */
+  .equipment-section {
+    padding: 4rem 1.5rem;
+  }
+  .equipment-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .equipment-visual {
+    order: 2;
+  }
+  .equipment-text {
+    order: 1;
+  }
+
+  /* ── TESTIMONIOS ── */
+  .testimonials {
+    padding: 4rem 1.5rem;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    padding: 4rem 1.5rem;
+  }
+  .cta-section .section-title {
+    font-size: 1.8rem;
+  }
+  .contact-info {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  /* ── SECCIÓN TAGS ── */
+  .section-title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu-item.asado {
+    grid-column: span 1;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .equipment-visual {
+    grid-template-columns: 1fr;
+  }
+  .equip-card.wide {
+    grid-column: span 1;
+  }
+}
