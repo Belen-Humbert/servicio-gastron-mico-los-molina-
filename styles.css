@@ -1499,3 +1499,46 @@ footer p {
     grid-column: span 1;
   }
 }
+
+
+/* ── NAV MÓVIL: logo + botón consultar ── */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.5rem;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-logo {
+    font-size: 1.1rem;
+  }
+  /* Mostrar solo el botón CTA */
+  .nav-links li:last-child {
+    display: block;
+  }
+  /* Crear un botón consultar standalone para móvil */
+  .nav-cta-mobile {
+    display: block;
+    background: var(--wine);
+    color: var(--cream-light) !important;
+    padding: 0.55rem 1.2rem;
+    border-radius: var(--r-sm);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .nav-cta-mobile:hover {
+    background: var(--wine-dark);
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-cta-mobile {
+    display: none;
+  }
+}
