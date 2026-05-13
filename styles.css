@@ -1616,3 +1616,29 @@ footer p {
     grid-column: span 1;
   }
 }
+
+
+.wa-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.2rem;
+}
+.wa-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #25D366;
+  color: white !important;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.15s;
+}
+.wa-btn:hover {
+  background: #1da851;
+  transform: translateY(-1px);
+}
