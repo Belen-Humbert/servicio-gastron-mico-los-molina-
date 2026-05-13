@@ -49,3 +49,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   // hero: la foto se inyecta via data-img en el <img> interno
 });
+
+
+// Hamburguesa
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+  });
+
+  // Cerrar al tocar un link
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+    });
+  });

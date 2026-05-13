@@ -15,7 +15,8 @@
   <!-- =============================================
        NAVEGACIÓN
        ============================================= -->
-  <nav>
+ 
+      <nav>
     <a href="#inicio" class="nav-logo">Servicio <span>Los Molina</span></a>
     <ul class="nav-links">
       <li><a href="#nosotros">Nosotros</a></li>
@@ -24,9 +25,21 @@
       <li><a href="#equipamiento">Equipamiento</a></li>
       <li><a href="#contacto" class="nav-cta">Consultar</a></li>
     </ul>
-    <a href="#contacto" class="nav-cta-mobile">Consultar</a>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 
+  <!-- Menú móvil -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#nosotros" class="mobile-link">Nosotros</a>
+    <a href="#servicios" class="mobile-link">Servicios</a>
+    <a href="#menu" class="mobile-link">Menú</a>
+    <a href="#equipamiento" class="mobile-link">Equipamiento</a>
+    <a href="#contacto" class="mobile-link mobile-cta">Consultar</a>
+  </div>
   <!-- =============================================
        HERO
        ============================================= -->
